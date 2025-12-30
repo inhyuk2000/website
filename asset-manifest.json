@@ -1,19 +1,23 @@
 {
   "files": {
     "main.css": "/website/static/css/main.dfcff7f1.css",
-    "main.js": "/website/static/js/main.7fb6706f.js",
+    "main.js": "/website/static/js/main.975cb2fb.js",
+    "static/media/배경.jpg": "/website/static/media/배경.847c478f87a6088d87a5.jpg",
     "static/media/hero-dark.jpg": "/website/static/media/hero-dark.37f2556d620821979e99.jpg",
-    "static/media/hero-light.jpg": "/website/static/media/hero-light.78b77836d8aee4d7d3cb.jpg",
+    "static/media/8.svg": "/website/static/media/8.78902568914b5fdc75523cc699146d3c.svg",
+    "static/media/블랙박스.jpg": "/website/static/media/블랙박스.e507cace51f967e0df1a.jpg",
+    "static/media/스마트폰_알림.webp": "/website/static/media/스마트폰_알림.6dd3461b301f1eb1cb1c.webp",
+    "static/media/환각.jpg": "/website/static/media/환각.187cb0a43976f8735f27.jpg",
     "service-worker.js": "/website/service-worker.js",
     "static/media/GH.svg": "/website/static/media/GH.b9e9a9aa6f05e9dfe5dcb8991bda3e4d.svg",
     "static/media/defaultNavLogo.svg": "/website/static/media/defaultNavLogo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "static/media/logo.svg": "/website/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/website/index.html",
     "main.dfcff7f1.css.map": "/website/static/css/main.dfcff7f1.css.map",
-    "main.7fb6706f.js.map": "/website/static/js/main.7fb6706f.js.map"
+    "main.975cb2fb.js.map": "/website/static/js/main.975cb2fb.js.map"
   },
   "entrypoints": [
     "static/css/main.dfcff7f1.css",
-    "static/js/main.7fb6706f.js"
+    "static/js/main.975cb2fb.js"
   ]
 }
