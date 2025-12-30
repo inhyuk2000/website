@@ -40,9 +40,9 @@ const StyledHero = styled.header`
     width: 100%;
     height: 100%;
     background: ${({ theme }) =>
-      theme.name === "light"
-        ? "linear-gradient(135deg, var(--bs-primary), var(--bs-light))"
-        : "linear-gradient(135deg, var(--bs-primary), var(--bs-dark))"};
+    theme.name === "light"
+      ? "linear-gradient(135deg, var(--bs-primary), var(--bs-light))"
+      : "linear-gradient(135deg, var(--bs-primary), var(--bs-dark))"};
     z-index: -2;
   }
 
@@ -55,9 +55,9 @@ const StyledHero = styled.header`
     width: 100%;
     height: 100%;
     background: ${({ theme }) =>
-      theme.name === "light"
-        ? "rgba(255, 255, 255, 0.2)"
-        : "rgba(0, 0, 0, 0.2)"};
+    theme.name === "light"
+      ? "rgba(255, 255, 255, 0.2)"
+      : "rgba(0, 0, 0, 0.2)"};
     z-index: -1;
   }
 
@@ -74,9 +74,9 @@ const StyledHero = styled.header`
   @media screen and (min-width: 1180px) {
     &::before {
       background: ${({ theme }) =>
-        theme.name === "light"
-          ? `url(${Light}) top center fixed no-repeat`
-          : `url(${Dark}) top center fixed no-repeat`};
+    theme.name === "light"
+      ? `url(${Light}) top center fixed no-repeat`
+      : `url(${Dark}) top center fixed no-repeat`};
       background-size: 100vw auto;
     }
   }
@@ -84,9 +84,9 @@ const StyledHero = styled.header`
   @media screen and (min-width: 1367px) {
     &::before {
       background: ${({ theme }) =>
-        theme.name === "light"
-          ? `url(${Light}) center center fixed no-repeat`
-          : `url(${Dark}) center center fixed no-repeat`};
+    theme.name === "light"
+      ? `url(${Light}) center center fixed no-repeat`
+      : `url(${Dark}) center center fixed no-repeat`};
       background-size: cover;
     }
   }
@@ -101,13 +101,15 @@ const propTypes = {
 const Hero = ({ name }) => {
   const { showBoundary } = useErrorBoundary();
 
+  const displayName = name === null ? "InHyuk Song" : name;
+
   return (
     <StyledHero>
       <Container>
         <Row className="align-items-center text-center">
           <Col>
             <h1 className="mb-3 display-3 title">
-              {name === null ? "null" : name}
+              {displayName}
             </h1>
             <div className="d-flex align-items-center justify-content-center">
               <SocialLinks />
