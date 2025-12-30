@@ -7,10 +7,10 @@ export const apiSlice = createApi({
   reducerPath: "api",
   baseQuery: fetchBaseQuery({
     baseUrl: "https://api.github.com",
-    prepareHeaders: (headers) => {
-      headers.set("Authorization", `token ${githubToken}`);
-      return headers;
-    }
+    // prepareHeaders: (headers) => {
+    //   headers.set("Authorization", `token ${githubToken}`);
+    //   return headers;
+    // }
   }),
   endpoints: (builder) => ({
     // https://docs.github.com/en/rest/users/users?apiVersion=2022-11-28#get-a-user

@@ -18,7 +18,7 @@ import Logo3 from "./images/블랙박스.jpg";
   Add your GitHub username (string - "YourUsername") below.
 */
 export const githubUsername = "inhyuk2000";
-export const githubToken = "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"
+// export const githubToken = "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"
 
 // Navbar Logo image
 export const navLogo = null;
