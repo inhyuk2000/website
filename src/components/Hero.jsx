@@ -95,8 +95,8 @@ const StyledHero = styled.header`
   .hero-img {
     margin-top: 60px;
     width: 50%;              /* 크기 줄이기 (필요하면 px로도 가능) */
-    max-width: 300px;        /* 너무 커지지 않게 */
-    border-radius: 30px;     /* 둥글게 */
+    max-width: 250px;        /* 너무 커지지 않게 */
+    border-radius: 10px;     /* 둥글게 */
     overflow: hidden;        /* 이미지가 radius 밖으로 안 나가게 */
   }
 
@@ -121,9 +121,12 @@ const Hero = ({ name }) => {
             <h1 className="mb-3 display-3 title">
               {displayName}
             </h1>
-            <div className="d-flex align-items-center justify-content-center">
+            {/* <div className="d-flex align-items-center justify-content-center">
               <SocialLinks />
-            </div>
+            </div> */}
+            <p className="hero-subtitle mb-3 title" style={{ marginTop: "30px", fontSize: "25px" }}>
+              <span style={{ color: "#033ED6" }}>Backend & AI</span> Engineer · Interested in <span style={{ color: "#033ED6" }}>HCI</span>
+            </p>
           </Col>
           <Col className="d-none d-md-block">
             <img
@@ -152,7 +155,7 @@ const Hero = ({ name }) => {
           Simulate Error Boundary
         </Button>
       </Container>
-    </StyledHero>
+    </StyledHero >
   );
 };
 

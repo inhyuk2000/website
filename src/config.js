@@ -6,7 +6,7 @@ import { Icon } from "@iconify/react";
 
 // Hero Images (add your images to the /images directory with the same names)
 import HeroLight from "./images/hero-light.jpg";
-import HeroDark from "./images/hero-dark.jpg";
+import HeroDark from "./images/hero-dark.svg";
 
 // Projects Images (add your images to the images directory and import below)
 import Logo from "./images/환각.jpg";
@@ -69,6 +69,35 @@ export const skillData = [
     id: 5,
     skill: <Icon icon="proicons:kotlin" className="display-4" />,
     name: "kotlin",
+  },
+  {
+    id: 6,
+    skill: <Icon icon="simple-icons:mysql" className="display-4" />,
+    name: "MySQL",
+  },
+  {
+    id: 7,
+    skill: <Icon icon="mdi:git" className="display-4" />,
+    name: "Git",
+  },
+  {
+    id: 8,
+    skill: <Icon icon="mdi:docker" className="display-4" />,
+    name: "Docker",
+  },
+  {
+    id: 9,
+    skill: <Icon icon="mdi:aws" className="display-4" />,
+    name: "AWS",
+  },
+];
+
+export const skillDetails = [
+  {
+    title: "Language",
+    items: [
+      "TOEIC : 875",
+    ],
   },
 ];
 

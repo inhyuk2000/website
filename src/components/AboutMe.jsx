@@ -8,8 +8,8 @@ import Title from "./Title";
 const StyledAboutMe = styled.section`
   color: #ffffff;
 
-  #projects .itemTitle {
-    font-size: 20px;
+  #updated_theme .itemTitle {
+    font-size: 16px;
   }
 
   .sectionTitle {
@@ -98,6 +98,22 @@ const StyledAboutMe = styled.section`
     font-weight: 700;
     text-decoration: underline;
   }
+
+  .badge {
+    font-size: 0.9rem;
+    padding: 5px 10px;
+    border-radius: 8px;
+    background: #033ED6;
+    color: #ffffff;
+    font-weight: 700;
+    margin-top: 5px;
+  }
+
+  .badgeRow {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
 `;
 
 /* ================= data ================= */
@@ -134,17 +150,17 @@ const projects = [
   {
     title: "딥러닝 해석을 위한 계층적 다중 뉴런 프레임워크 모델 개발",
     period: "2025",
-    sub: "KCC2025 - 장려상",
+    badges: ["KCC2025", "Encouragement Award (장려상)"],
   },
   {
     title: "다중 언어 모델 기반 멀티 에이전트 챗봇 토론 프레임워크를 통한 환각 탐지 및 교정",
     period: "2025",
-    sub: "KCC2025 - 최우수상",
+    badges: ["KCC2025", "Best Poster Award (최우수상)"],
   },
   {
     title: "LLM을 활용한 자연어 기반 알림 전송 제어 시스템",
     period: "2025",
-    sub: "KSC2025 - Accept",
+    badges: ["KCC2025", "Accept"],
   },
 ];
 
@@ -157,7 +173,7 @@ const activities = [
   {
     title: "KHUMA",
     period: "2022 - 2024",
-    sub: "KHU Running Club [Pacer Staff]",
+    sub: "KHU Running Club - Pacer Staff",
   },
   {
     title: "KHUDA",
@@ -184,6 +200,13 @@ const Timeline = ({ items }) => (
 
           {it.period && <span className="badgeYear">{it.period}</span>}
         </div>
+        {it.badges && (
+          <div className="badgeRow" style={{ marginTop: "6px" }}>
+            {it.badges.map((b, i) => (
+              <span className="badge" key={i}>{b}</span>
+            ))}
+          </div>
+        )}
         {it.sub && <div className="itemSub">{it.sub}</div>}
         {it.linkText && it.linkUrl && (
           <div className="linkRow">
@@ -216,18 +239,22 @@ const AboutMe = () => {
             {/* Left */}
             <Col md={6}>
               <div className="panelTitle">Education</div>
-              <Timeline items={education} />
+              <div id="updated_theme">
+                <Timeline items={education} />
+              </div>
 
               <div className="panelTitle" style={{ marginTop: "2rem" }}>
                 Activities
               </div>
-              <Timeline items={activities} />
+              <div id="updated_theme">
+                <Timeline items={activities} />
+              </div>
             </Col>
 
             {/* Right */}
             <Col md={6}>
               <div className="panelTitle">Projects</div>
-              <div id="projects">
+              <div id="updated_theme">
                 <Timeline items={projects} />
               </div>
             </Col>
