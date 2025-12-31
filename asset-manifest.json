@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/website/static/css/main.dfcff7f1.css",
-    "main.js": "/website/static/js/main.a52b4d30.js",
+    "main.js": "/website/static/js/main.bce67b71.js",
     "static/media/hero-dark.jpg": "/website/static/media/hero-dark.37f2556d620821979e99.jpg",
     "static/media/hero-light.jpg": "/website/static/media/hero-light.78b77836d8aee4d7d3cb.jpg",
     "static/media/블랙박스.jpg": "/website/static/media/블랙박스.e507cace51f967e0df1a.jpg",
@@ -13,10 +13,10 @@
     "static/media/defaultNavLogo.svg": "/website/static/media/defaultNavLogo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/website/index.html",
     "main.dfcff7f1.css.map": "/website/static/css/main.dfcff7f1.css.map",
-    "main.a52b4d30.js.map": "/website/static/js/main.a52b4d30.js.map"
+    "main.bce67b71.js.map": "/website/static/js/main.bce67b71.js.map"
   },
   "entrypoints": [
     "static/css/main.dfcff7f1.css",
-    "static/js/main.a52b4d30.js"
+    "static/js/main.bce67b71.js"
   ]
 }
