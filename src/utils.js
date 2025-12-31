@@ -10,9 +10,11 @@ export const getPreferredTheme = () => {
     return storedTheme;
   }
 
-  return window.matchMedia("(prefers-color-scheme: dark)").matches
-    ? "dark"
-    : "light";
+  // return window.matchMedia("(prefers-color-scheme: dark)").matches
+  //   ? "dark"
+  //   : "light";
+
+  return "dark";
 };
 
 export const setTheme = (theme) => {
