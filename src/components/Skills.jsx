@@ -38,14 +38,15 @@ const Skills = () => {
                 size="lg"
                 variant={theme === "light" ? "outline-dark" : "outline-light"}
                 className="mt-5"
+                style={{ padding: '1rem 2.5rem', fontSize: '2rem', fontWeight: 'bold' }}
               >
-                R&eacute;sum&eacute;
+                CV
               </Button>
             </a>
           )}
         </Container>
       </section>
-    </Element>
+    </Element >
   );
 };
 // #endregion
