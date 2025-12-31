@@ -11,7 +11,7 @@ import defaultLogo from "../images/defaultNavLogo.svg";
 // Components
 import { Link as ScrollLink } from "react-scroll";
 import { Container, Nav, Navbar } from "react-bootstrap";
-import ThemeToggle from "./ThemeToggle";
+// import ThemeToggle from "./ThemeToggle";
 
 // #region constants
 const navLinks = {
@@ -41,7 +41,7 @@ const StyledDiv = styled.div`
 
   .logo-img {
     background: ${({ theme }) =>
-      theme.name === "light" ? "var(--bs-dark)" : "var(--bs-light)"};
+    theme.name === "light" ? "var(--bs-dark)" : "var(--bs-light)"};
   }
 `;
 // #endregion
@@ -88,53 +88,53 @@ const NavBar = ({ Logo = defaultLogo, callBack, closeDelay = 125 }) => {
             <Nav navbarScroll className="me-auto">
               {pathname === "/"
                 ? navLinks.to.map((el) => {
-                    return (
-                      <Nav.Item key={el.id}>
-                        <ScrollLink
-                          to={el.to}
-                          spy={true}
-                          activeClass="active"
-                          className="nav-link"
-                          onClick={() => {
-                            setTimeout(() => {
-                              setisExpanded(false);
-                            }, closeDelay);
-                          }}
-                        >
-                          {el.name}
-                        </ScrollLink>
-                      </Nav.Item>
-                    );
-                  })
+                  return (
+                    <Nav.Item key={el.id}>
+                      <ScrollLink
+                        to={el.to}
+                        spy={true}
+                        activeClass="active"
+                        className="nav-link"
+                        onClick={() => {
+                          setTimeout(() => {
+                            setisExpanded(false);
+                          }, closeDelay);
+                        }}
+                      >
+                        {el.name}
+                      </ScrollLink>
+                    </Nav.Item>
+                  );
+                })
                 : navLinks.routes.map((el) => {
-                    return (
-                      <Nav.Item key={el.id}>
-                        <Link
-                          to={el.route}
-                          className={
-                            pathname === el.route
-                              ? "nav-link active"
-                              : "nav-link"
-                          }
-                          onClick={() => {
-                            setTimeout(() => {
-                              setisExpanded(false);
-                            }, closeDelay);
-                          }}
-                        >
-                          {el.name}
-                        </Link>
-                      </Nav.Item>
-                    );
-                  })}
+                  return (
+                    <Nav.Item key={el.id}>
+                      <Link
+                        to={el.route}
+                        className={
+                          pathname === el.route
+                            ? "nav-link active"
+                            : "nav-link"
+                        }
+                        onClick={() => {
+                          setTimeout(() => {
+                            setisExpanded(false);
+                          }, closeDelay);
+                        }}
+                      >
+                        {el.name}
+                      </Link>
+                    </Nav.Item>
+                  );
+                })}
             </Nav>
-            <Nav>
+            {/* <Nav>
               <ThemeToggle
                 closeDelay={closeDelay}
                 setExpanded={setisExpanded}
                 setTheme={callBack}
               />
-            </Nav>
+            </Nav> */}
           </Navbar.Collapse>
         </Container>
       </Navbar>

@@ -4,7 +4,8 @@ import styled, { keyframes } from "styled-components";
 // Components
 import { Container } from "react-bootstrap";
 // Images
-import Logo from "../images/logo.svg";
+// import Logo from "../images/logo.svg";
+import Logo_new from "../images/송인혁_증명사진.jpg";
 // Utils
 import { updateTitle } from "../utils";
 
@@ -56,7 +57,7 @@ const NotFound = () => {
       <StyledNotFound>
         <Container className="d-flex justify-content-center">
           <span>4</span>
-          <img src={Logo} alt="React Logo" className="logo-img" />
+          <img src={Logo_new} alt="React Logo" className="logo-img" />
           <span>4</span>
         </Container>
         <p className="text-center">Sorry, page not found...</p>

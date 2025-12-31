@@ -6,7 +6,8 @@ import PropTypes from "prop-types";
 // Icons
 import { Icon } from "@iconify/react";
 // Images
-import Logo from "../images/logo.svg";
+// import Logo from "../images/logo.svg";
+import Logo_new from "../images/송인혁_증명사진.jpg";
 import { Light, Dark } from "../config";
 // Components
 import { useErrorBoundary } from "react-error-boundary";
@@ -65,11 +66,11 @@ const StyledHero = styled.header`
     height: 10rem;
   }
 
-  @media (prefers-reduced-motion: no-preference) {
-    .hero-img {
-      animation: ${spin} infinite 20s linear;
-    }
-  }
+  // @media (prefers-reduced-motion: no-preference) {
+  //   .hero-img {
+  //     animation: ${spin} infinite 20s linear;
+  //   }
+  // }
 
   @media screen and (min-width: 1180px) {
     &::before {
@@ -90,6 +91,15 @@ const StyledHero = styled.header`
       background-size: cover;
     }
   }
+
+  .hero-img {
+    margin-top: 60px;
+    width: 50%;              /* 크기 줄이기 (필요하면 px로도 가능) */
+    max-width: 300px;        /* 너무 커지지 않게 */
+    border-radius: 30px;     /* 둥글게 */
+    overflow: hidden;        /* 이미지가 radius 밖으로 안 나가게 */
+  }
+
 `;
 // #endregion
 
@@ -117,7 +127,7 @@ const Hero = ({ name }) => {
           </Col>
           <Col className="d-none d-md-block">
             <img
-              src={Logo}
+              src={Logo_new}
               alt="React Logo"
               className="w-75 mx-auto hero-img"
             />
