@@ -125,7 +125,7 @@ const Hero = ({ name }) => {
               <SocialLinks />
             </div> */}
             <p className="hero-subtitle mb-3 title" style={{ marginTop: "30px", fontSize: "25px" }}>
-              <span style={{ color: "#033ED6" }}>Backend & AI</span> Engineer · Interested in <span style={{ color: "#033ED6" }}>HCI</span>
+              <span style={{ color: "#212529" }}>Backend</span> & <span style={{ color: "#212529" }}>AI Engineer</span> · Interested in <span style={{ color: "#212529" }}>HCI</span>
             </p>
           </Col>
           <Col className="d-none d-md-block">

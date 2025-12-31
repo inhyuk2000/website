@@ -103,7 +103,7 @@ const StyledAboutMe = styled.section`
     font-size: 0.9rem;
     padding: 5px 10px;
     border-radius: 8px;
-    background: #033ED6;
+    background: #E54121;
     color: #ffffff;
     font-weight: 700;
     margin-top: 5px;
@@ -160,7 +160,7 @@ const projects = [
   {
     title: "LLM을 활용한 자연어 기반 알림 전송 제어 시스템",
     period: "2025",
-    badges: ["KCC2025", "Accept"],
+    badges: ["KSC2025", "Accept"],
   },
 ];
 
@@ -182,7 +182,7 @@ const activities = [
   },
   {
     title: "USER EXPERIENCE COMPUTING LAB",
-    period: "2024.11 - 2025.11",
+    period: "2024.11 - 2025.12",
     sub: "Undergraduate Intern",
     linkText: "UXC Lab Website",
     linkUrl: "https://uxc.khu.ac.kr/",
