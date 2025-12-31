@@ -5,10 +5,10 @@ export const updateTitle = (title) => (document.title = title);
 export const getStoredTheme = () => localStorage.getItem("theme");
 
 export const getPreferredTheme = () => {
-  const storedTheme = getStoredTheme();
-  if (storedTheme) {
-    return storedTheme;
-  }
+  // const storedTheme = getStoredTheme();
+  // if (storedTheme) {
+  //   return storedTheme;
+  // }
 
   // return window.matchMedia("(prefers-color-scheme: dark)").matches
   //   ? "dark"
