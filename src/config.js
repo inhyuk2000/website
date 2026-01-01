@@ -96,7 +96,7 @@ export const skillDetails = [
   {
     title: "Language",
     items: [
-      "TOEIC : 875",
+      "TOEIC (875)",
     ],
   },
 ];

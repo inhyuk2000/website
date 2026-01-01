@@ -38,9 +38,11 @@ const Skills = () => {
             <Col md={8}>
               {skillDetails.map((section, idx) => (
                 <div key={idx} style={{ marginBottom: "2rem" }}>
-                  <div style={{ fontWeight: "700", fontSize: "1.5rem", textAlign: "center" }}>
-                    {section.title}
+                  <div style={{ fontWeight: "700", fontSize: "2rem", textAlign: "center" }} className="title">
+                    <Title size="h2" text="Language" />
+                    {/* {section.title} */}
                   </div>
+                  <div className="underline"></div>
                   <ul style={{ marginTop: "1rem", paddingLeft: "0px", textAlign: "center", listStyle: "none", fontWeight: "600" }}>
                     {section.items.map((item, i) => (
                       <li key={i} style={{ marginBottom: "0.3rem" }}>

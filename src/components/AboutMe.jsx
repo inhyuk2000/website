@@ -103,7 +103,7 @@ const StyledAboutMe = styled.section`
     font-size: 0.9rem;
     padding: 5px 10px;
     border-radius: 8px;
-    background: #E54121;
+    background: #DA4354;
     color: #ffffff;
     font-weight: 700;
     margin-top: 5px;

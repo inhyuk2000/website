@@ -13,15 +13,24 @@ import { Card } from "react-bootstrap";
 // #region styled-components
 const StyledCard = styled.div`
   .card {
+
+    .award-link {
+    color: #ffc107; /* Bootstrap warning yellow */
+
+    &:hover {
+      color: #ffda6a; /* hover 시 조금 밝게 */
+    }
+  }
+
     height: var(--card-height);
     border: var(--border);
     transition: all 0.2s ease-in-out;
     background: ${({ theme }) =>
-      theme.name === "light" ? "" : "var(--bs-gray)"};
+    theme.name === "light" ? "" : "var(--bs-gray)"};
     box-shadow: ${({ theme }) =>
-      theme.name === "light"
-        ? "0 3px 10px rgb(0 0 0 / 0.2)"
-        : "0 3px 10px rgb(255 255 255 / 0.2)"};
+    theme.name === "light"
+      ? "0 3px 10px rgb(0 0 0 / 0.2)"
+      : "0 3px 10px rgb(255 255 255 / 0.2)"};
 
     .card-img-top {
       height: 50%;
@@ -34,18 +43,18 @@ const StyledCard = styled.div`
 
       &:hover {
         color: ${({ theme }) =>
-          theme.name === "light" ? "var(--bs-dark)" : "var(--bs-light)"};
+    theme.name === "light" ? "var(--bs-dark)" : "var(--bs-light)"};
       }
     }
 
     .card-footer {
       border-top: var(--border);
       background: ${({ theme }) =>
-        theme.name === "light" ? "" : "var(--bs-gray-dark)"};
+    theme.name === "light" ? "" : "var(--bs-gray-dark)"};
 
       .card-link {
         color: ${({ theme }) =>
-          theme.name === "light" ? "var(--bs-dark)" : "var(--bs-light)"};
+    theme.name === "light" ? "var(--bs-dark)" : "var(--bs-light)"};
 
         &:hover {
           color: var(--bs-primary);
@@ -62,14 +71,16 @@ const StyledCard = styled.div`
 
 // #region component
 const propTypes = {
-  demo: PropTypes.string,
+  pdf: PropTypes.string,
+  poster: PropTypes.string,
   description: PropTypes.string,
   image: PropTypes.node,
   name: PropTypes.string.isRequired,
   url: PropTypes.string.isRequired,
+  award: PropTypes.string,
 };
 
-const ProjectCard = ({ demo, description, image, name, url }) => {
+const ProjectCard = ({ pdf, award, poster, description, image, name, url }) => {
   return (
     <StyledCard>
       <Card>
@@ -82,10 +93,20 @@ const ProjectCard = ({ demo, description, image, name, url }) => {
         <Card.Body className="overflow-auto text-center">
           <Card.Title>{name}</Card.Title>
           <Card.Text>{description}</Card.Text>
-          {demo !== (undefined && null && "") ? (
-            <Card.Link href={demo}>
-              {"Live Demo "}
-              <Icon icon="icon-park-outline:code-computer" />
+          {pdf ? (
+            <Card.Link href={pdf} target="_blank" rel="noopener noreferrer">
+              {"Paper"}
+            </Card.Link>
+          ) : null}
+          {poster ? (
+            <Card.Link href={poster} target="_blank" rel="noopener noreferrer">
+              {"Poster"}
+            </Card.Link>
+          ) : null}
+          {award ? (
+            <Card.Link href={award} target="_blank" rel="noopener noreferrer" className="award-link">
+              {"Award"}
+              {/* <Icon icon="mdi:trophy" /> */}
             </Card.Link>
           ) : null}
         </Card.Body>
