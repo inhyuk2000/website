@@ -1,22 +1,23 @@
 {
   "files": {
     "main.css": "/website/static/css/main.dfcff7f1.css",
-    "main.js": "/website/static/js/main.64cf9d86.js",
+    "main.js": "/website/static/js/main.c43ea2b5.js",
     "static/media/hero-dark.svg": "/website/static/media/hero-dark.a585855c3805b6bd7088ae95008ed137.svg",
+    "static/media/rag.png": "/website/static/media/rag.f50718c0a963e57c7bf3.png",
+    "static/media/hallu.png": "/website/static/media/hallu.0a0772167c1cc9e9c10b.png",
     "static/media/hero-light.jpg": "/website/static/media/hero-light.78b77836d8aee4d7d3cb.jpg",
     "static/media/블랙박스.jpg": "/website/static/media/블랙박스.e507cace51f967e0df1a.jpg",
     "static/media/스마트폰_알림.webp": "/website/static/media/스마트폰_알림.6dd3461b301f1eb1cb1c.webp",
-    "static/media/환각.jpg": "/website/static/media/환각.187cb0a43976f8735f27.jpg",
     "static/media/송인혁_증명사진.jpg": "/website/static/media/송인혁_증명사진.f009d710ddb7f3bc4dfa.jpg",
     "service-worker.js": "/website/service-worker.js",
     "static/media/GH.svg": "/website/static/media/GH.b9e9a9aa6f05e9dfe5dcb8991bda3e4d.svg",
     "static/media/defaultNavLogo.svg": "/website/static/media/defaultNavLogo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/website/index.html",
     "main.dfcff7f1.css.map": "/website/static/css/main.dfcff7f1.css.map",
-    "main.64cf9d86.js.map": "/website/static/js/main.64cf9d86.js.map"
+    "main.c43ea2b5.js.map": "/website/static/js/main.c43ea2b5.js.map"
   },
   "entrypoints": [
     "static/css/main.dfcff7f1.css",
-    "static/js/main.64cf9d86.js"
+    "static/js/main.c43ea2b5.js"
   ]
 }
