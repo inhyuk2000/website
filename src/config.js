@@ -9,9 +9,10 @@ import HeroLight from "./images/hero-light.jpg";
 import HeroDark from "./images/hero-dark.svg";
 
 // Projects Images (add your images to the images directory and import below)
-import Logo from "./images/환각.jpg";
+import Logo from "./images/hallu.png";
 import Logo2 from "./images/스마트폰_알림.webp";
 import Logo3 from "./images/블랙박스.jpg";
+import Logo4 from "./images/rag.png";
 
 /* START HERE
  **************************************************************
@@ -123,6 +124,10 @@ export const projectCardImages = [
   {
     name: "A-Hierarchical-Interpretation-Framework-Based-on-Multi-Neuron-Activation-Patterns",
     image: Logo3,
+  },
+  {
+    name: "A-Multi-LLM-Cross-Verification-Framework-for-Attribution-Hallucination-Detection-in-RAG-Generation",
+    image: Logo4,
   },
 ];
 

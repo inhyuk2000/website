@@ -95,8 +95,8 @@ const StyledHero = styled.header`
   .hero-img {
     margin-top: 60px;
     width: 50%;              /* 크기 줄이기 (필요하면 px로도 가능) */
-    max-width: 250px;        /* 너무 커지지 않게 */
-    border-radius: 10px;     /* 둥글게 */
+    max-width: 200px;        /* 너무 커지지 않게 */
+    border-radius: 20px;     /* 둥글게 */
     overflow: hidden;        /* 이미지가 radius 밖으로 안 나가게 */
   }
 

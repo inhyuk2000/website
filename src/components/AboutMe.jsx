@@ -130,37 +130,45 @@ const projects = [
     title:
       "부동산 투자가치가 높은 성장 지역 예측 시스템 개발",
     period: "2023",
-    sub: "Data Business (Python)",
+    sub: "Side Project (Web Python Programming Course)",
   },
   {
     title: "7호선 급행열차 최적 정차역 제안 시스템 개발",
     period: "2024",
-    sub: "Data Science, Machine Learning (Python)",
+    sub: "Team Toy Project / 1st Place",
   },
   {
     title: "편의점 히트 상품 예측 및 신제품 추천 시스템 개발",
     period: "2024",
-    sub: "Data Science (Python)",
+    sub: "Datathon Team Project / 3rd Place",
   },
   {
     title: "지진 대비 추가적인 임시주거시설 추천",
     period: "2024",
-    sub: "Machine Learning (Python)",
+    sub: "Data Business Team Project",
   },
   {
     title: "딥러닝 해석을 위한 계층적 다중 뉴런 프레임워크 모델 개발",
     period: "2025",
     badges: ["KCC2025", "Encouragement Award (장려상)"],
+    sub: "Capstone Design Project",
   },
   {
     title: "다중 언어 모델 기반 멀티 에이전트 챗봇 토론 프레임워크를 통한 환각 탐지 및 교정",
     period: "2025",
     badges: ["KCC2025", "Best Poster Award (최우수상)"],
+    sub: "Personal Research (UXC Undergraduate)",
   },
   {
     title: "LLM을 활용한 자연어 기반 알림 전송 제어 시스템",
     period: "2025",
-    badges: ["KSC2025", "Accept"],
+    badges: ["KSC2025", "Paper Accept"],
+    sub: "Personal Research (UXC Undergraduate)",
+  },
+  {
+    title: "멀티 LLM RAG 교차 검증을 통한 생성 단계의 근거 귀속 환각 탐지",
+    period: "2025",
+    sub: "Graduation Project",
   },
 ];
 
